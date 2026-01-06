@@ -17,3 +17,5 @@ Tech Stack
 - Axios
 - Socket.IO Client
 - CSS
+
+live site link: https://task-manager-gamma-one-97.vercel.app/
