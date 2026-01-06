@@ -27,7 +27,7 @@ function App() {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
 
-  // Client-side filtering to ensure instant UI updates when status changes via Socket/Local state
+  
   const displayedTasks = tasks.filter(task => {
     if (filter === 'all') return true;
     return task.status === filter;

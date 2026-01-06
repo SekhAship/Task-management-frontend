@@ -267,15 +267,15 @@ header h1 {
 
 textarea {
   resize: vertical;
-  /* Allow vertical resize only */
+ 
   min-height: 80px;
 }
 
 .task-content {
   flex: 1;
-  /* Take available width */
+ 
   min-width: 0;
-  /* Enable wrap in flex container */
+ 
 }
 
 .task-content h3 {
@@ -283,7 +283,7 @@ textarea {
   font-weight: 600;
   margin-bottom: 0.25rem;
   overflow-wrap: break-word;
-  /* Ensure title also wraps */
+  
 }
 
 .task-desc {
@@ -291,13 +291,13 @@ textarea {
   font-size: 0.95rem;
   margin-bottom: 0.75rem;
   word-wrap: break-word;
-  /* Legacy support */
+ 
   overflow-wrap: break-word;
-  /* Modern standard */
+ 
   word-break: break-word;
-  /* Force break if needed */
+  
   white-space: pre-wrap;
-  /* Preserve newlines but wrap text */
+  
 }
 
 .task-meta {
@@ -326,7 +326,6 @@ textarea {
   gap: 0.3rem;
 }
 
-/* Status Badge */
 .status-badge {
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
@@ -351,7 +350,6 @@ textarea {
   color: var(--status-completed);
 }
 
-/* Actions */
 .task-actions {
   display: flex;
   flex-direction: column;
@@ -382,15 +380,13 @@ textarea {
   background-color: #fef2f2;
 }
 
-/* Dark Mode Contrast Overrides */
 [data-theme='dark'] .btn-primary,
 [data-theme='dark'] .filter-btn.active {
   color: var(--bg-body);
-  /* Use the dark background color for text on light buttons */
+
   font-weight: 700;
 }
 
 [data-theme='dark'] .filter-btn:not(.active) {
   color: #C5D89D;
-  /* Make inactive tabs brighter/lighter to pop against dark bg, if that was the issue, or keep as is. User asked for "dark" but that implies the buttons are light. I will stick to the buttons being light. */
 }

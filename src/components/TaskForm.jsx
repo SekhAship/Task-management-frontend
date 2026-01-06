@@ -8,7 +8,8 @@ const TaskForm = ({ onCreate }) => {
     e.preventDefault();
     if (!title.trim()) return;
     
-    // Simplified: No time or alarm data sent
+
+
     onCreate({ 
       title, 
       description
@@ -16,20 +17,22 @@ const TaskForm = ({ onCreate }) => {
     
     setTitle('');
     setDescription('');
+
   };
 
   return (
     <div className="card">
       <form onSubmit={handleSubmit} className="task-form">
+
         <div className="input-group">
-          <input
+           <input
             type="text"
             className="input-field"
             placeholder="What needs to be done?"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
-          />
+           />
         </div>
         
         <div className="input-group">
@@ -38,12 +41,14 @@ const TaskForm = ({ onCreate }) => {
             placeholder="Description (optional)"
             rows="3"
             value={description}
+
             onChange={(e) => setDescription(e.target.value)}
           />
         </div>
 
         <button type="submit" className="btn-primary">
           <span>+</span> Create Task
+          
         </button>
       </form>
     </div>
